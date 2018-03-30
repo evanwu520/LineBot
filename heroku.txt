@@ -1,7 +1,12 @@
 install heroku cli
-
 heroku plugins:install heroku-cli-deploy
 
-heroku war:deploy <path_to_war_file> --app <app_name>
 
+heroku deploy:jar springBoot.jar -o --server.port=$PORT --app  linebot-service
+heroku war:deploy <path_to_war_file> --app <app_name>
 heroku deploy:jar <path_to_jar> --app <appname>
+heroku deploy:jar RunJarOnHeroku.jar --app linebot-service
+heroku deploy:jar springBoot.jar -o --server.port=$PORT --app  linebot-service
+heroku deploy:war herokuTest.war --app service
+
+
