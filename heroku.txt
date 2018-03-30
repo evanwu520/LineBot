@@ -1,0 +1,7 @@
+install heroku cli
+
+heroku plugins:install heroku-cli-deploy
+
+heroku war:deploy <path_to_war_file> --app <app_name>
+
+heroku deploy:jar <path_to_jar> --app <appname>
