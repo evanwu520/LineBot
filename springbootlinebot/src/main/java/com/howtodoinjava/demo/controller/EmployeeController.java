@@ -63,7 +63,7 @@ public class EmployeeController {
 	       if(reply){
 	    	   
 	    	  /* if("IU".equals(msg)){
-	    		   msg = "主管您好，我叫吳書溥，很高興有機會來 貴公司面試!!";
+	    		   msg = "主管您好，很高興有機會來 貴公司面試!!";
 	    	   }*/
 	    	   
 	    	   System.out.println("msg:"+msg);
